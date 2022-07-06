@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+:root {
+   --dark-bg: #1f2937;
+   --light-bg: #f9faf8;
+   --secondary-txt: #e5e7eb;
+   --button-c: #3882f6;
+}
+
 
 * {
   box-sizing: border-box;
@@ -11,7 +18,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background: #a1c3ff;
 }
 
 img {
@@ -34,8 +40,8 @@ ul {
 }
 
 .navbar {
-  background: #3474e6;
-  color: #fff;
+  background: var(--dark-bg);
+  color: var(--secondary-txt);
   height: 60px;
 }
 
@@ -45,7 +51,7 @@ ul {
 }
 
 .navbar a {
-  color: #fff;
+  color: var(--secondary-txt);
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -70,9 +76,10 @@ ul {
   margin-left: 20px;
 }
 
+/* Header */
 .header {
-  background-color: #0151cc;
-  color: #fff;
+  background-color: var(--dark-bg);
+  color: var(--light-bg);
   min-height: 400px;
 }
 
@@ -84,7 +91,9 @@ ul {
 
 .header img {
   max-width: 500px;
-  border: 5px solid red;
+  border: 5px solid white;
+  border-radius: 5px;
+  margin: 100px auto 100px 50px;
 }
 
 .header .container {
@@ -93,6 +102,22 @@ ul {
   justify-content: space-between;
 }
 
+button {
+    background-color: var(--secondary-txt); /* Green */
+    border: none;
+    border-radius: 5px;
+    color: var(--dark-bg);
+    font-weight: bolder;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
 .boxes .container {
   display: flex;
   justify-content: space-between;
@@ -100,10 +125,12 @@ ul {
 
 .box {
   flex: 1;
-  background: #0a51cc;
+  background: var(--dark-bg);
   color: #fff;
   border-radius: 10px;
   margin: 20px 10px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
   padding: 15px 20px;
 }
@@ -127,6 +154,7 @@ footer {
     align-items: center;
     justify-content: center;
     color: #fff;
+    background-color: var(--dark-bg);
 }
 
 @media (max-width: 768px) {
@@ -141,3 +169,22 @@ footer {
     text-align: center;
   }
 }
+
+.quotes {
+    display: flex;
+    background-color: var(--secondary-txt);
+}
+
+.quote {
+    padding-top: 100px;
+}
+.quote, .quote-author {
+    font-size: 36px;
+    font-style: italic;
+}
+
+.quote-author {
+    text-align: right;
+    padding-bottom: 100px;
+}
+
