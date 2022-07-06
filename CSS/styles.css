@@ -155,6 +155,8 @@ footer {
     justify-content: center;
     color: #fff;
     background-color: var(--dark-bg);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 @media (max-width: 768px) {
@@ -188,3 +190,11 @@ footer {
     padding-bottom: 100px;
 }
 
+.last-content button{
+  display: flex;
+  text-align: end;
+}
+
+footer a {
+  color: #e5e7eb;
+}
